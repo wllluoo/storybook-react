@@ -4,12 +4,13 @@
  * @param {string} title - The title of the book.
  * @param {string} author - The author of the book.
  */
+import imgPath from './assets/loader.gif';
 import PropTypes from 'prop-types';
 import React from 'react';
-const style = require('./index.less')
+const style = require('./index.css')
 console.log('style', style);
 
-const Loading = ({ show, imgPath, className }) => show && 
+const Loading = ({ show, className }) => show && 
 <img src={imgPath} alt="" className={`${style["u-loading"]} ${className}`} />
  || '';
 
